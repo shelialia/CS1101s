@@ -18,7 +18,7 @@ function is_biggie_size(combo) {
 
 // Qns 4
 function combo_price(combo) {
-    return is_biggie_size(combo)? 1.17 * combo + 0.50: 1.17 * combo;
+    return is_biggie_size(combo)? 1.17 * (combo - 4) + 0.50: 1.17 * combo;
 }
 
 // Qns 5
@@ -42,3 +42,5 @@ function other_combos(order) {
     // divide order by 10 to get rid of the last number then use math_floor to get rid of the decimal
     return math_floor(order / 10);
 } 
+
+
